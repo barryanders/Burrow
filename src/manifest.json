@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "Burrow",
+  "version": "1.2.0",
+  "description": "Save Firefox windows and bookmarks in a local encrypted vault, with recovery keys and portable backups.",
+  "icons": {
+    "48": "assets/icon-burrowmark-48.png",
+    "96": "assets/icon-burrowmark-96.png",
+    "128": "assets/icon-burrowmark-128.png"
+  },
+  "action": {
+    "default_title": "Burrow \u2014 tabs and bookmarks",
+    "default_icon": {
+      "16": "assets/icon-toolbar-on-light-16.png",
+      "32": "assets/icon-toolbar-on-light-32.png",
+      "64": "assets/icon-toolbar-on-light-64.png"
+    },
+    "theme_icons": [
+      {
+        "dark": "assets/icon-toolbar-on-light-16.png",
+        "light": "assets/icon-toolbar-on-dark-16.png",
+        "size": 16
+      },
+      {
+        "dark": "assets/icon-toolbar-on-light-32.png",
+        "light": "assets/icon-toolbar-on-dark-32.png",
+        "size": 32
+      }
+    ],
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "contextMenus",
+    "downloads",
+    "storage"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "burrowmarks@downpourdigital.com",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      },
+      "strict_min_version": "142.0"
+    }
+  },
+  "optional_permissions": [
+    "tabs"
+  ],
+  "homepage_url": "https://barryanders.github.io/burrow/"
+}

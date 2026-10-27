@@ -1,0 +1,24 @@
+{
+  "name": "burrow",
+  "version": "1.2.0",
+  "private": false,
+  "type": "module",
+  "description": "Local encrypted windows and bookmarks for Firefox.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "package": "npm run build && node scripts/package.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "homepage": "https://barryanders.github.io/burrow/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barryanders/burrow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/barryanders/burrow/issues"
+  },
+  "license": "MIT"
+}

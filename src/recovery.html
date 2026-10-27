@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Burrow Recovery</title><link rel="stylesheet" href="styles.css"></head>
+  <body><main class="gate"><section class="gate-card card"><img src="assets/icon-128.png" alt=""><h1>Recover an encrypted backup</h1><p class="subtitle">This page works directly from a folder, without the extension, a store listing, or the internet.</p><div class="field"><label for="backup-file">Burrow backup</label><input id="backup-file" type="file" accept=".burrowmarks,application/json"></div><div class="field"><label for="recovery-secret">Master password or recovery key</label><textarea id="recovery-secret"></textarea></div><div class="actions"><button class="button primary" id="recover-password">Unlock with password</button><button class="button" id="recover-key">Unlock with recovery key</button></div><p class="error" id="recovery-error"></p><div id="recovery-result"></div></section></main><script src="recovery-standalone.js"></script></body>
+</html>
