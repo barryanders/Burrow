@@ -4,6 +4,10 @@ Free encrypted windows and bookmarks for Firefox. All themes and automatic sessi
 
 [Website](https://barryanders.github.io/burrow/) · [Source releases](https://github.com/barryanders/Burrow/releases) · [Firefox listing](https://addons.mozilla.org/en-US/firefox/addon/burrowmarks/)
 
+## Screenshots
+
+![Bookmarks in a sample vault](docs/screenshots/bookmarks.jpg)
+
 ## Build and test
 
 Requires Node.js 20 or later. No runtime dependencies.
