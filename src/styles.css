@@ -215,9 +215,6 @@ h1 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); line-height: 1.08; }
 .publisher-about { text-align: center; }
 .publisher-lockup { margin: 0 auto 20px; display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
 .publisher-lockup > strong { font-size: 1.05rem; }
-.good-burrow-mark { width: 38px; height: 38px; position: relative; display: inline-block; overflow: hidden; border-radius: 50% 50% 44% 44%; background: #1f493b; box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
-.good-burrow-mark i { position: absolute; inset: 9px 8px 0; border-radius: 50% 50% 0 0; background: #f7f7f3; }
-.good-burrow-mark b { position: absolute; left: 13px; bottom: 0; width: 12px; height: 15px; border-radius: 50% 50% 0 0; background: #ad614c; }
 .publisher-link { color: var(--ink); font-weight: 750; text-underline-offset: 3px; }
 .field { display: grid; gap: 6px; margin: 15px 0; }
 .field label { font-weight: 650; font-size: .82rem; }
@@ -584,7 +581,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus
 .window-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 .window-hero > img { max-height: 315px; }
 
-/* Product copy and artwork follow the Good Burrow storefront. */
+/* Product copy and artwork follow the Anders storefront. */
 .sidebar-footer { gap: 0; padding-top: 18px; border-top: 1px solid color-mix(in srgb, var(--sidebar-muted) 20%, transparent); }
 .plan-summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .plan-summary > span { display: grid; gap: 3px; }

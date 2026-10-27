@@ -69,7 +69,7 @@ try:
  d.set_window_size(560,950);time.sleep(.3)
  d.save_screenshot('output/playwright/burrow-1.0/narrow.png')
  d.set_window_size(1440,1000)
- # Premium cosmetics are gated, without blocking free window actions above.
+ # Theme controls do not block window actions above.
  d.find_element(By.CSS_SELECTOR,'[data-action=settings]').click()
  wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'label[data-theme-preview=lockbox]'))).click()
  wait.until(EC.presence_of_element_located((By.ID,'buy-lifetime')))

@@ -321,7 +321,7 @@ function sessionControlsMarkup(vault) {
     <details class="simple-details" ${settings.enabled ? "" : "open"}><summary>Automatic save settings</summary><form id="session-settings"><label class="toggle-setting"><input type="checkbox" id="session-enabled" ${settings.enabled ? "checked" : ""}><span><strong>Automatic session saving</strong><small>Free · Saved only on this device, in this vault.</small></span></label><div class="actions"><label for="session-interval">Save changes every</label><select id="session-interval">${SESSION_INTERVALS.map(minutes => `<option value="${minutes}" ${settings.intervalMinutes === minutes ? "selected" : ""}>${minutes < 60 ? `${minutes} minutes` : "hour"}</option>`).join("")}</select><button class="button primary" type="submit">Save settings</button><button class="button" id="session-save-now" type="button" ${settings.enabled && currentPaid ? "" : "disabled"}>Save now</button></div></form>
     <p class="shelf-note">Keeps the latest 30 changed sessions, up to 5,000 tabs in history. Choose Keep on any window to move a copy to Saved windows. Automatic capture supports up to 500 open web tabs at a time; unsupported windows are skipped. Your history is included in encrypted backups and export.</p></details>
     <p id="session-status" role="status">${escapeHtml(settings.status || (settings.enabled ? (currentPaid ? "Automatic saves are on. Unchanged sessions are skipped." : "Automatic saves are paused.") : "Automatic saves are off. Existing history stays available."))}</p>
-    ${currentPaid ? "" : '<button class="button" data-action="upgrade">Get Burrow Lifetime · $9</button>'}</section>`;
+    </section>`;
 }
 
 function bindSessionControls() {
