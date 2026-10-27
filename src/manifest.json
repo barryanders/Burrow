@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Burrow",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Save Firefox windows and bookmarks in a local encrypted vault, with recovery keys and portable backups.",
   "icons": {
     "48": "assets/icon-burrowmark-48.png",

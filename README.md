@@ -2,7 +2,7 @@
 
 Free encrypted windows and bookmarks for Firefox. All themes and automatic session saving are included without a license key.
 
-[Website](https://barryanders.github.io/burrow/) · [Source releases](https://github.com/barryanders/burrow/releases) · [Firefox listing](https://addons.mozilla.org/en-US/firefox/addon/burrowmarks/)
+[Website](https://barryanders.github.io/burrow/) · [Source releases](https://github.com/barryanders/Burrow/releases) · [Firefox listing](https://addons.mozilla.org/en-US/firefox/addon/burrowmarks/)
 
 ## Build and test
 
