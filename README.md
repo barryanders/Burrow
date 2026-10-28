@@ -6,6 +6,8 @@ Free encrypted windows and bookmarks for Firefox. All themes and automatic sessi
 
 ## Screenshots
 
+Real app captures. [Explore the full-size showcase](https://barryanders.github.io/burrow/).
+
 ![Bookmarks in a sample vault](docs/screenshots/bookmarks.jpg)
 
 ## Build and test
