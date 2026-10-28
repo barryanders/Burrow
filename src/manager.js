@@ -69,16 +69,6 @@ function themeDisplayName(theme) {
   return THEMES.find((item) => item.id === normalizeTheme(theme))?.name || "Sage";
 }
 
-function problemReportUrl() {
-  const version = browser.runtime.getManifest().version || "Unknown";
-  const url = new URL("https://barryanders.github.io/report/");
-  url.searchParams.set("app", "burrowmarks");
-  url.searchParams.set("name", "Burrow");
-  url.searchParams.set("version", version);
-  url.searchParams.set("os", navigator.platform || "Unknown");
-  return url.href;
-}
-
 function themeChoices(selectedTheme = DEFAULT_THEME, { compact = false } = {}) {
   const selected = normalizeTheme(selectedTheme);
   return `<div class="theme-choices${compact ? " compact" : ""}">${THEMES.map((theme) => `
@@ -482,7 +472,7 @@ function settingsPageMarkup(state, automaticBackups) {
           ${backupToolsMarkup(automaticBackups)}
         </section>
         <section class="settings-panel" id="settings-panel-about" role="tabpanel" aria-labelledby="settings-tab-about" data-settings-panel="about" ${activeTab === "about" ? "" : "hidden"}>
-          <section class="page-card settings-about"><img src="${themeMoleAsset(theme)}" alt="Burrow mole"><div><h2>Burrow ${escapeHtml(browser.runtime.getManifest().version || "")}</h2><p>Create multiple independently locked local vaults, each with its own password, recovery key, backup history, and theme. Tabs, bookmarks, and everyday tools are free.</p><div class="actions"><a class="button with-icon" href="https://barryanders.github.io/" target="_blank" rel="noopener">${uiIcon("vault")}<span>Anders</span></a><button class="button with-icon" data-action="report">${uiIcon("help")}<span>Report a problem</span></button></div></div></section>
+          <section class="page-card settings-about"><img src="${themeMoleAsset(theme)}" alt="Burrow mole"><div><h2>Burrow ${escapeHtml(browser.runtime.getManifest().version || "")}</h2><p>Create multiple independently locked local vaults, each with its own password, recovery key, backup history, and theme. Tabs, bookmarks, and everyday tools are free.</p><div class="actions"><a class="button with-icon" href="https://barryanders.github.io/" target="_blank" rel="noopener">${uiIcon("vault")}<span>Anders</span></a></div></div></section>
         </section>
       </div>
     </div>`;
@@ -787,7 +777,6 @@ async function handleAction(action, id) {
   if (action === "vault-menu") await showVaultMenu();
   if (action === "folders") { currentView = "folders"; currentFolderId = null; await renderManager(); }
   if (action === "settings") { currentView = "settings"; currentSettingsTab = "main"; currentFolderId = null; await renderManager(); }
-  if (action === "report") browser.tabs.create({ url: problemReportUrl() });
   if (action === "folder-select") { currentView = "bookmarks"; currentFolderId = id || null; await renderManager(); }
   if (action === "folder-rename") showFolderRenameDialog(id);
   if (action === "folder-delete") showFolderDeleteConfirmation(id);
