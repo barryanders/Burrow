@@ -10,6 +10,11 @@ Real app captures. [Explore the full-size showcase](https://barryanders.github.i
 
 ![Bookmarks in a sample vault](docs/screenshots/bookmarks.jpg)
 
+![Saved windows with example tabs](docs/screenshots/saved-windows.jpg)
+
+![Review a saved window before restoring it](docs/screenshots/restore-window.jpg)
+
+
 ## Build and test
 
 Requires Node.js 20 or later. No runtime dependencies.
